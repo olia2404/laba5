@@ -1,3 +1,4 @@
+%1.3
 clear
 clc
 s1=tf([3 0 0],[2 1])
@@ -5,7 +6,7 @@ s2= tf([2 4],[5 0])
 ser =series(s1,s2)
 par=parallel(s1,s2)
 s1+s2
-
+%1.4
 a=[3 1 2]
 poly2str=poly2str(a,'a')
 roots=roots(a)
@@ -17,6 +18,7 @@ zpk = zpk(w1)
 pzmap(w1),grid on
 tfdata(w2)
 w=w1 /w2
+%1.5
 t_w=ctranspose(w)
 inv(t_w)
 f1=s1+s2
